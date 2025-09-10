@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 120" width="400" height="120">
-    <!-- Літера D -->
+
     <text x="10" y="85" font-size="80" font-family="Arial, sans-serif" fill="#dddddd">D</text>
 
-    <!-- Червоний текст //CT -->
+
     <text x="95" y="85" font-size="80" font-family="Arial, sans-serif" fill="#ff3333">//CT</text>
 </svg>
