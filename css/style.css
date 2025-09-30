@@ -1,15 +1,452 @@
 body {
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
     background-color: #939191;
-    color: #ffffff;
-    max-width: 1280px;
-    margin: 50px auto;
-    padding: 20px;
-    margin: 0px;
+    color: #fff;
 }
 
-img {
-    max-width: 40px;
-    max-height: 20px;
-    margin: 0px;
+/* Верхній колонтитул */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #222;
+    padding: 10px 20px;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.lang-search {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.lang-search input {
+    padding: 5px;
+    border-radius: 4px;
+    border: none;
+}
+
+/* Банер */
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 20px;
+    background: #333;
+}
+
+.banner-text {
+    max-width: 55%;
+}
+
+.banner-images img {
+    max-width: 180px; /* розмір хлопця в червоному светрі */
+    height: auto;
+}
+
+/* Кнопка хочу поступити */
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: red;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+
+/*Наші спеціальності*/
+
+body {
+   margin: 0;
+   font-family: Arial, sans-serif;
+   background-color: #111;
+   color: #fff;
+}
+
+.specialties {
+   text-align: center;
+   padding: 50px 20px;
+   background: #222;
+}
+
+.specialties h2 {
+   font-size: 32px;
+   margin-bottom: 15px;
+}
+
+.specialties-desc {
+   max-width: 700px;
+   margin: 0 auto 40px;
+   font-size: 16px;
+   color: #bbb;
+}
+
+.specialties-cards {
+   display: flex;
+   justify-content: center;
+   gap: 30px;
+   flex-wrap: wrap;
+}
+
+.card {
+   background: #111;
+   border: 1px solid #333;
+   border-radius: 10px;
+   padding: 40px 30px;
+   width: 280px;
+   transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.card h3 {
+   font-size: 40px;
+   margin: 0;
+   color: #fff;
+}
+
+.card p {
+   margin-top: 10px;
+   font-size: 18px;
+   color: #bbb;
+}
+
+.card:hover {
+   transform: translateY(-10px);
+   border-color: #00bfff;
+}
+
+
+/* Якщо в числах */
+.numbers {
+    text-align: center;
+    padding: 50px 20px;
+    background: #111; /* темний фон */
+}
+
+.numbers h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #fff;
+}
+
+.numbers-cards {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.num-card {
+    text-align: center;
+    min-width: 150px;
+}
+
+.num-card h3 {
+    font-size: 48px;
+    margin: 0;
+    color: #fff;
+}
+
+.num-card p {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #bbb;
+}
+
+
+/* Відгуки випускників */
+.carousel-track {
+    display: flex;
+    flex-wrap: wrap;              /* Додаємо перенесення на новий рядок */
+    justify-content: center;      /* Вирівнювання по центру */
+    gap: 20px;                     /* Відстань між картками */
+}
+
+/* Картки */
+.review-card {
+    flex: 0 1 250px;
+    background-color: #2b2b2b;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: left;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+
+
+/* Нам довіряють */
+.trust {
+    background: #222;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.trust h2 {
+    font-size: 28px;
+    margin-bottom: 40px;
+    color: #fff;
+}
+
+.trust-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap; /* щоб переносилося на новий рядок */
+}
+
+.trust-logos img {
+    max-height: 50px;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+    filter: grayscale(100%);
+}
+
+.trust-logos img:hover {
+    opacity: 1;
+    filter: grayscale(0%);
+}
+
+
+
+/* Контакти */
+.contacts {
+    background: #1b1b1b;   /* темний фон */
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.contacts h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #444;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.contacts p {
+    font-size: 16px;
+    color: #ccc;
+    margin-bottom: 40px;
+}
+
+
+.contacts-info {      /* Контейнер для блоків */
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+
+.contact-block {       /* Кожен блок */
+    min-width: 220px;
+}
+
+.contact-block h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+
+.contact-block p {      /* Телефон */
+    margin: 5px 0;
+    font-size: 15px;
+}
+
+.contact-block small {
+    font-size: 13px;
+    color: #888;
+}
+
+.contact-block a,      /* Червоний акцент */
+.contact-block p {
+    color: #ff3b3b;
+    text-decoration: none;
+}
+
+.contact-block a:hover {
+    text-decoration: underline;
+}
+
+
+.social-icons {        /* Соцмережі */
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.social-icons a {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+}
+
+.social-icons img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);
+}
+
+
+
+/*Новини */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #111;
+    color: #fff;
+}
+
+.news-section {
+    padding: 40px;
+    background: #222;
+    text-align: center;
+}
+
+.news-section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.news-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* щоб переносились на новий рядок */
+    margin-bottom: 30px;
+}
+
+.news-card {
+    background: #111;
+    border-radius: 12px;
+    padding: 15px;
+    width: 230px;
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.news-card:hover {
+    transform: translateY(-8px);
+}
+
+.news-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.news-card h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.news-card p {
+    font-size: 14px;
+    color: #bbb;
+    margin-bottom: 10px;
+}
+
+.news-card .date {
+    font-size: 12px;
+    color: #999;
+}
+
+.news-video video {
+    max-width: 500px;
+    width: 100%;
+    border-radius: 12px;
+    margin: 20px auto;
+    display: block;
+}
+
+.more-btn {
+    padding: 10px 20px;
+    background: red;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.more-btn:hover {
+    background: darkred;
+}
+
+
+
+/*Нижній контитул сайту*/
+.footer {
+    background: #1c1c1c;
+    color: #fff;
+    padding: 30px 0;
+    font-size: 14px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+    flex: 1;
+    padding: 10px;
+}
+
+.footer-center {
+    text-align: center;
+}
+
+.footer-logo {
+    max-width: 120px; /* розмір логотипу */
+    margin-bottom: 10px;
+}
+
+.footer .socials {
+    margin-top: 10px;
+}
+
+.footer .socials a {
+    margin: 0 5px;
+    display: inline-block;
+}
+
+.footer a {
+    color: #ff3333;
+    text-decoration: none;
 }
