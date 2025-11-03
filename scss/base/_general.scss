@@ -10,7 +10,7 @@ section {
   margin: 40px 0;
 }
 
-/* Банер */
+///* Банер */
 .banner {
   display: flex;
   justify-content: space-between;
@@ -48,9 +48,9 @@ section {
 
 .banner-images img {
   max-width: 320px;
-  //height: auto;
-  //border-radius: 0 0 50% 50%;
-  //background: radial-gradient(circle at center, #8b0000 0%, #000 80%);
+  height: auto;
+  border-radius: 0 0 50% 50%;
+  background: radial-gradient(circle at center, #8b0000 0%, #000 80%);
 }
 
 /* Кнопка */
