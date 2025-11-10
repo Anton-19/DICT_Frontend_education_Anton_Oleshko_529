@@ -3,27 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <title>Кафедра ІКТ ХАІ</title>
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/main.css"><!-- підключив CSS -->
 </head>
 <body>
 
 <!-- Верхній колонтитул сайту -->
-<header>
+<header class="header">
     <div class="logo">
         <img src="images/Logo.svg" alt="Логотип кафедри">
     </div>
     <nav>
-        <ul>
+        <ul class="main-menu">
             <li><a href="#specialties">Спеціальності</a></li>
             <li><a href="#science">Наука</a></li>
             <li><a href="#news">Новини</a></li>
             <li><a href="#contact">Контакти</a></li>
         </ul>
     </nav>
-    <div class="lang-search">
+    <div class="search">
         <input type="text" placeholder="Пошук...">
-        <a href="?lang=ua">UA</a> | <a href="?lang=en">EN</a>
+        <img src="images/search.svg" alt="Пошук" class="search-icon">
+    </div>
+    <div class="lang">
+        <ul class="lang-wrapper">
+            <li class="ua"><a href="?lang=ua" class="is-active">UA</a></li>
+            <li class="en"><a href="?lang=en">EN</a></li>
+        </ul>
     </div>
 </header>
 
@@ -39,7 +44,7 @@
         <a href="#" class="btn">Хочу поступити</a>
     </div>
     <div class="banner-images">
-        <img src="images/boy.png" alt="Студент">
+        <img src="images/man.png" alt="Студент">
     </div>
 </section>
 
