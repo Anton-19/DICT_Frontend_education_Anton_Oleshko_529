@@ -90,25 +90,14 @@ body {
 }
 
 
-///*Освітня програма спеціальності “Інжинирінг і програмування інфокомунікаційних систем”*/
-//body {
-//  background: #121212;
-//  color: #fff;
-//  font-family: Arial, sans-serif;
-//}
-//
-//  border: 1px solid var(--red-color);
-//
-//  p {
-//    margin: 0;
-//  }
-//
-//  &:hover {
-//    background: var(--red-hover-color);
-//    border-color: var(--red-hover-color);
-//  }
-//
-//  &:focus {
-//    background: var(--primary-color);
-//  }
-//}
+/* Global responsive images, blocks */
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.section {
+  width: 100%;
+  padding: 20px;
+}

@@ -167,4 +167,72 @@
 }
 
 
+nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  .burger-menu {
+    margin-left: auto;
+    width: fit-content;
+
+    .menu-toggle {
+      margin: 0;
+      padding: 10px 15px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  }
+
+  .main-menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+    background: #000; /* або інший фон */
+    position: absolute;
+    top: 53px;
+    width: 90%;
+    left: 0;
+    padding: 20px;
+
+    .menu-link {
+      text-decoration: none;
+      color: white;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+
+    &.show {
+      display: flex;
+    }
+  }
+}
+
+/* Desktop menu */
+@media (min-width: 1200px) {
+  nav {
+    justify-content: center;
+
+    .burger-menu {
+      display: none;
+    }
+
+    .main-menu {
+      display: flex !important;
+      flex-direction: row;
+      gap: 20px;
+      background: none;
+      position: static;
+      width: auto;
+      padding: 0;
+    }
+  }
+}
+
+
+
 
