@@ -907,4 +907,46 @@ body {
   font-size: 1rem;
 }
 
+/* Мобільне меню приховане */
+.mobile-menu {
+  display: none;
+  background-color: #003366;
+  padding: 20px;
+}
+.mobile-menu ul {
+  list-style: none;
+  padding: 0;
+}
+.mobile-menu ul li {
+  margin-bottom: 10px;
+}
+.mobile-menu ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Клас .show — показує меню */
+.show {
+  display: block;
+}
+
+/* Бургер-кнопка */
+.burger {
+  display: none;
+  font-size: 30px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Показуємо бургер лише на мобільному */
+@media (max-width: 768px) {
+  .burger {
+    display: block;
+  }
+  .main-menu {
+    display: none;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
